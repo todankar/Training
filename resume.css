@@ -1,0 +1,64 @@
+body{
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+}
+.property{
+    width: 19%;
+    float:left;
+    font-size: 20px;
+    padding-top:4px;
+    padding-bottom:4px;
+}
+
+.value{
+    width: 79%;
+    float:left;
+    font-size: 18px;
+    padding-top:4px;
+    padding-bottom:4px;
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#linespace{
+    border: 2px solid darkgrey;
+    margin-left:1%;
+    margin-right:1%;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    width: 40%;
+    text-align: left;
+}
+.row{
+    width :100%; 
+    float:left;
+    border:1px solid #f0f0f0;
+    /* padding:3px; */
+}
+.heading{
+    margin-block-start: auto;
+    margin-block-end: auto;
+}
+
+.exp{
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.first-item{
+    margin-block-start: auto;    
+}
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="en">
+        <link rel="stylesheet" type="text/css" media="screen" href="TodoList.css">
+        <script src="ListAction.js" type="text/javascript"></script>
+        <title>Gaurav Mathur</title>
+    </head>
+    <body onload="init()">
+        <div id="container">
+            <div id="listheader">
+                <h2>My To Do List</h2>
+                <div class="inputTask">
+                    <input type="text" id="newItem" name="addtask" placeholder="New item...">
+                    <input type="button" name="addtask"  value="Add"  onclick="addItem()">
+                </div>
+            </div>
+            <div id="listdetail">
+                <ul id="dynamic-list" style="list-style-type:none;">
+                    <!-- <li>Hit the Gym</li>
+                    <li>Pay bills</li>
+                    <li>Buy Eggs</li>
+                    <li>Read a book</li>
+                    <li>Organize office</li> -->
+                </ul>
+            </div>
+            <div>
+                <button onclick="saveList()" id="saveUpdate">Submit</button>
+                <button onclick="saveItems(this)" id="saveItem">Save List</button>
+                
+            </div>
+        </div>
+    </body>
+
+</html>
