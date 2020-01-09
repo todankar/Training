@@ -4,7 +4,7 @@ function addItem(textValue,saveStyle = false){
     
 
     if(item){
-        //console.log(item);
+        
         var node = document.createElement("LI");               
         var textnode = document.createTextNode(item);       
         node.appendChild(textnode);   
