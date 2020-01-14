@@ -26,7 +26,16 @@ function addItem(textValue,saveStyle = false){
     
 }
 
-function init(){
+function init(el){
+
+    let profile = new XMLHttpRequest();
+    profile.open("POST","http://www.aztechz.com/to-do-api/get_list.php", false);
+    profile.setRequestHeader("Content-Type","application/json");
+    let parameter = {"user_id":el.value};
+    profile.send(JSON.stringify(parameter));
+    let profileData = JSON.parse(profile.responseText);
+
+
     let savedList = localStorage.list ? localStorage.list : "";
     let foundItem = localStorage[(new Date()).toLocaleDateString()] ||  "";
     let itemStatus = foundItem ? JSON.parse(foundItem) : {};
